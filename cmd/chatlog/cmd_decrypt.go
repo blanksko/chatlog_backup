@@ -11,7 +11,7 @@ import (
 
 func init() {
 	rootCmd.AddCommand(decryptCmd)
-	decryptCmd.Flags().StringVarP(&decryptPlatform, "platform", "p", "", "platform")
+	decryptCmd.Flags().StringVarP(&decryptPlatform, "platform", "p", "", "platform (e.g. wechat, qq)")
 	decryptCmd.Flags().IntVarP(&decryptVer, "version", "v", 0, "version")
 	decryptCmd.Flags().StringVarP(&decryptDataDir, "data-dir", "d", "", "data dir")
 	decryptCmd.Flags().StringVarP(&decryptDatakey, "data-key", "k", "", "data key")
@@ -28,7 +28,8 @@ var (
 
 var decryptCmd = &cobra.Command{
 	Use:   "decrypt",
-	Short: "decrypt",
+	Short: "decrypt chat log database",
+	Long:  "Decrypt an encrypted chat log database using the provided data key.",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		cmdConf := getDecryptConfig()
