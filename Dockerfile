@@ -32,9 +32,11 @@ RUN chmod +x /usr/local/bin/entrypoint.sh \
 
 EXPOSE 5030
 
+# Using TZ=Asia/Shanghai for my local timezone
 ENV CHATLOG_DATA_DIR=/app/data \
     CHATLOG_WORK_DIR=/app/work \
     CHATLOG_HTTP_ADDR=0.0.0.0:5030 \
+    TZ=Asia/Shanghai \
     PATH="/usr/local/bin:${PATH}"
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
