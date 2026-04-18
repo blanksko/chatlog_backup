@@ -52,10 +52,9 @@ After installing, open the application, and you will be ready to work with your 
 If you encounter any issues or have questions, please check the FAQ section on our GitHub page or open an issue. We appreciate your feedback and want to make this tool better for you.
 
 > **Personal note**: I forked this primarily to use the HTTP API service for querying group chat history. Works well on macOS Sonoma — tested with WeChat 3.8.x.
+>
+> **Tip**: When using the HTTP API locally, the default port is 5030. I bind it to `127.0.0.1` only to avoid accidental LAN exposure — just pass `--host 127.0.0.1` at startup.
 
 ## 🌟 Need Help?
 
-For assistance, please refer to the following resources: 
-
-- **Documentation**: Detailed user guides can be found in the GitHub repository.
-- **Community Support**: Reach out in the issues section on GitHub.
+For assistance, please refer
