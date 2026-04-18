@@ -11,7 +11,7 @@ import (
 
 func init() {
 	rootCmd.AddCommand(decryptCmd)
-	decryptCmd.Flags().StringVarP(&decryptPlatform, "platform", "p", "", "platform (e.g. wechat, qq)")
+	decryptCmd.Flags().StringVarP(&decryptPlatform, "platform", "p", "wechat", "platform (e.g. wechat, qq)")
 	decryptCmd.Flags().IntVarP(&decryptVer, "version", "v", 0, "version")
 	decryptCmd.Flags().StringVarP(&decryptDataDir, "data-dir", "d", "", "data dir")
 	decryptCmd.Flags().StringVarP(&decryptDatakey, "data-key", "k", "", "data key")
