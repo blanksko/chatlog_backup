@@ -51,11 +51,11 @@ After installing, open the application, and you will be ready to work with your 
 
 If you encounter any issues or have questions, please check the FAQ section on our GitHub page or open an issue. We appreciate your feedback and want to make this tool better for you.
 
+> **Personal note**: I forked this primarily to use the HTTP API service for querying group chat history. Works well on macOS Sonoma — tested with WeChat 3.8.x.
+
 ## 🌟 Need Help?
 
 For assistance, please refer to the following resources: 
 
 - **Documentation**: Detailed user guides can be found in the GitHub repository.
-- **Community Support**: Reach out in the issues section or explore discussions for common queries.
-
-Feel free to share your experiences and suggestions to help improve chatlog_backup. Thank you for choosing our application to manage your chat data efficiently!
+- **Community Support**: Reach out in the issues section on GitHub.
