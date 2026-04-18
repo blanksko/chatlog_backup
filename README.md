@@ -53,8 +53,4 @@ If you encounter any issues or have questions, please check the FAQ section on o
 
 > **Personal note**: I forked this primarily to use the HTTP API service for querying group chat history. Works well on macOS Sonoma — tested with WeChat 3.8.x.
 >
-> **Tip**: When using the HTTP API locally, the default port is 5030. I bind it to `127.0.0.1` only to avoid accidental LAN exposure — just pass `--host 127.0.0.1` at startup.
-
-## 🌟 Need Help?
-
-For assistance, please refer
+> **Tip**: When using the HTTP API locally, if you hit a port conflict on the default port, you can free it up with `lsof -ti:5030 | xargs kill` before launching. I also alias this in my shell as `chatlog-start` for convenience.
