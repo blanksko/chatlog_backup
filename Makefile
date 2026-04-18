@@ -21,7 +21,8 @@ UPX_PLATFORMS := \
 
 .PHONY: all clean lint tidy test build crossbuild upx
 
-all: clean lint tidy test build
+# Default target: skip lint and test for faster local iteration
+all: clean tidy build
 
 clean:
 	@echo "🧹 Cleaning..."
