@@ -44,6 +44,7 @@ test:
 build:
 	@echo "🔨 Building for current platform..."
 	CGO_ENABLED=1 $(GO) build -trimpath $(LDFLAGS) -o bin/$(BINARY_NAME) main.go
+	@echo "✅ Build complete: bin/$(BINARY_NAME)"
 
 crossbuild: clean
 	@echo "🌍 Building for multiple platforms..."
