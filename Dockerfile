@@ -33,13 +33,14 @@ RUN chmod +x /usr/local/bin/entrypoint.sh \
 EXPOSE 5030
 
 # Using TZ=America/New_York for my local timezone
+# Increased healthcheck interval to reduce log noise on my home server
 ENV CHATLOG_DATA_DIR=/app/data \
     CHATLOG_WORK_DIR=/app/work \
     CHATLOG_HTTP_ADDR=0.0.0.0:5030 \
     TZ=America/New_York \
     PATH="/usr/local/bin:${PATH}"
 
-HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+HEALTHCHECK --interval=60s --timeout=5s --start-period=10s --retries=3 \
     CMD curl -f http://localhost:5030/health || exit 1
 
 ENTRYPOINT ["entrypoint.sh"]
