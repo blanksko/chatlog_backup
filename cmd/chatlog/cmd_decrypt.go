@@ -45,7 +45,8 @@ var decryptCmd = &cobra.Command{
 			log.Err(err).Msg("failed to decrypt")
 			return
 		}
-		fmt.Println("decrypt success")
+		// Print the platform that was used so it's easier to confirm the right one was selected
+		fmt.Printf("decrypt success (platform: %s)\n", decryptPlatform)
 	},
 }
 
