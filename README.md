@@ -53,4 +53,4 @@ If you encounter any issues or have questions, please check the FAQ section on o
 
 > **Personal note**: I forked this primarily to use the HTTP API service for querying group chat history. Works well on macOS Sonoma — tested with WeChat 3.8.x.
 >
-> **Tip**: When using the HTTP API locally, if you hit a port conflict on the default port, you can free it up with `lsof -ti:5030 | xargs kill` before launching. I also alias this in my shell as `chatlog-start` for convenience.
+> **Tip**: When using the HTTP API locally, the service defaults to port `5030`. If you need to access it from another device on your LAN, you can forward the port with `ssh -L 5030:localhost:5030 user@your-mac` or just bind it to `0.0.0.0` in the config. I went with SSH forwarding to keep it off the local network.
