@@ -34,9 +34,10 @@ EXPOSE 5030
 
 # Using TZ=America/New_York for my local timezone
 # Increased healthcheck interval to reduce log noise on my home server
+# Set CHATLOG_HTTP_ADDR to localhost only since this runs behind a reverse proxy (nginx)
 ENV CHATLOG_DATA_DIR=/app/data \
     CHATLOG_WORK_DIR=/app/work \
-    CHATLOG_HTTP_ADDR=0.0.0.0:5030 \
+    CHATLOG_HTTP_ADDR=127.0.0.1:5030 \
     TZ=America/New_York \
     PATH="/usr/local/bin:${PATH}"
 
