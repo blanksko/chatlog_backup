@@ -46,6 +46,8 @@ build:
 	CGO_ENABLED=1 $(GO) build -trimpath $(LDFLAGS) -o bin/$(BINARY_NAME) main.go
 	@echo "✅ Build complete: bin/$(BINARY_NAME)"
 
+# NOTE: crossbuild requires a cross-compilation toolchain for CGO_ENABLED=1.
+# For simple local builds without CGO, set CGO_ENABLED=0.
 crossbuild: clean
 	@echo "🌍 Building for multiple platforms..."
 	for platform in $(PLATFORMS); do \
