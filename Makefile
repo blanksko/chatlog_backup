@@ -38,7 +38,8 @@ tidy:
 
 test:
 	@echo "🧪 Running tests..."
-	$(GO) test ./... -cover
+	# Use -v for verbose output to make it easier to spot failures
+	$(GO) test ./... -cover -v
 
 build:
 	@echo "🔨 Building for current platform..."
