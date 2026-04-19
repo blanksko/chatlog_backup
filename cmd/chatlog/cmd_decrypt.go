@@ -32,6 +32,12 @@ var decryptCmd = &cobra.Command{
 	Long:  "Decrypt an encrypted chat log database using the provided data key.",
 	Run: func(cmd *cobra.Command, args []string) {
 
+		// Validate that a data key was provided before attempting decryption
+		if len(decryptDatakey) == 0 {
+			log.Error().Msg("data key is required: use -k to provide the data key")
+			return
+		}
+
 		cmdConf := getDecryptConfig()
 
 		m := chatlog.New()
